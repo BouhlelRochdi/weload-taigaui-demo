@@ -1,0 +1,47 @@
+.register-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+form {
+  width: 80%;
+  max-width: 600px;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.form-group {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.form-group:last-child {
+  margin-right: 0;
+}
+
+.buttons-row {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.center-elem {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.global-button-text {
+  font-family: "mulish";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+}

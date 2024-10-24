@@ -1,0 +1,51 @@
+/* You can add global styles to this file, and also import other style files */
+// define global color variable
+@font-face {
+  font-family: "mulish";
+  src: url("./assets/font/mulish.ttf");
+}
+
+:root {
+  --tui-primary-color: #61a40e;
+  --tui-text-primary-on-accent-1: white;
+  --tui-secondary-color: #4b7f0b;
+
+  // define global font
+  --tui-font-family: "Roboto", sans-serif;
+  --tui-primary-font-family: "Mulish";
+
+  --tui-background-accent-1: #61a40e; //contour des input (input border)
+  --tui-background-neutral-1: #60a40e69; //select hover color
+}
+
+* {
+  font-family: "mulish";
+}
+
+[tuiAppearance][data-appearance="outline"] {
+  --t-border: 1px solid var(--tui-primary-color);
+  --t-bg: transparent;
+  color: var(--tui-primary-color);
+  border-radius: 25px;
+  width: 200px;
+  border: solid 1px var(--tui-primary-color);
+}
+
+[tuiAppearance][data-appearance="floating"] {
+  border-radius: 25px;
+  width: 200px;
+  background-color: var(--tui-primary-color);
+  color: var(--tui-text-primary-on-accent-1);
+}
+
+[tuiAppearance][data-appearance="primary"] {
+  --t-bg: var(--tui-primary-color);
+  background: var(--t-bg);
+  color: var(--tui-text-primary-on-accent-1);
+}
+
+[tuiAppearance][data-appearance="primary"]:-webkit-any(a, button, select, textarea, input, label):hover:not(
+    :disabled
+  ):not([data-state]) {
+  --t-bg: var(--tui-secondary-color);
+}
